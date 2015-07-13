@@ -5,49 +5,7 @@ to make requests and access the response.
 
 This library is available under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
-## Usage
-
-The http-request library is available from [Maven Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.github.kevinsawicki%22%20AND%20a%3A%22http-request%22).
-
-```xml
-<dependency>
-  <groupId>com.github.kevinsawicki</groupId>
-  <artifactId>http-request</artifactId>
-  <version>6.0</version>
-</dependency>
-```
-
-Not using [Maven](http://maven.apache.org/)? Simply copy the [HttpRequest](https://raw.githubusercontent.com/kevinsawicki/http-request/master/lib/src/main/java/com/github/kevinsawicki/http/HttpRequest.java)
-class into your project, update the package declaration, and you are good to go.
-
-Javadocs are available [here](http://kevinsawicki.github.com/http-request/apidocs/index.html).
-
 ## FAQ
-
-### Who uses this?
-
-See [here](https://github.com/kevinsawicki/http-request/wiki/Used-By) for a
-list of known projects using this library.
-
-### Why was this written?
-
-This library was written to make HTTP requests simple and easy when using a `HttpURLConnection`.
-
-Libraries like [Apache HttpComponents](http://hc.apache.org) are great but sometimes
-for either simplicity, or perhaps for the environment you are deploying to (Android),
-you just want to use a good old-fashioned `HttpURLConnection`.  This library seeks
-to add convenience and common patterns to the act of making HTTP requests such as
-a fluid-interface for building requests and support for features such as multipart
-requests.
-
-**Bottom line:** The single goal of this library is to improve the usability of the
-`HttpURLConnection` class.
-
-### What are the dependencies?
-
-**None**.  The goal of this library is to be a single class class with some inner static
-classes.  The test project does require [Jetty](http://eclipse.org/jetty/) in order
-to test requests against an actual HTTP server implementation.
 
 ### How are exceptions managed?
 
